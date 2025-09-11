@@ -1,0 +1,65 @@
+
+/* Importar Google Fonts para melhor tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+/*Configurações de fonte para o body HTML*/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Espaçamento entre as letras*/
+p{
+    letter-spacing: 1.5px;
+}
+
+/*Configurações de overlay para escurecer qualquer fundo*/
+.overlay-papeis-parede{
+ position: absolute; /*Overlay cobrindo o papel de parede todo*/
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)); /*Efeito escurecimento na imagem*/
+ backdrop-filter: blur(0.5px); /*Pequeno efeito de desfoque na imagem*/
+ z-index: 1;
+}
+/*Camada do container, será a 2, enquanto do overlay será 1.. tudo ficará em cima do overflow*/
+.container{
+    z-index: 2;
+}
+
+/*Linha decorativa abaixo título*/
+.linha-decorativa{
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #6623c3 0%, #ba93da 100%);
+    border-radius: 2px;
+    margin: 0 auto;
+}
+
+
+/*Template dos cards*/
+.card-template{
+    background: linear-gradient(135deg, #0c0c0c31 50%, #30303000 70%);
+    
+}
+
+.table-elegant{
+        
+}
+
+.table-elegant:hover{
+    overflow: hidden;  
+    opacity: 0.5; 
+}
+
+
+
+
+

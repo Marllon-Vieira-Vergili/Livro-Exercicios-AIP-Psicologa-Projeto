@@ -1,0 +1,21 @@
+/* Importar Google Fonts para melhor tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*Backgrund principal com overlay*/
+.plano-de-fundo-questionario{
+    background-image: url("./../../img/11810.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    position: relative;
+    margin: 0;
+    padding: 0;  
+    min-height: 100vh;  
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
