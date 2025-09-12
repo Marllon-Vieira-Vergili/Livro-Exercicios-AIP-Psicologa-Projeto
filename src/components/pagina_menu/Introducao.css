@@ -11,13 +11,13 @@
 }
 
 
-
 .fonte-aip{
-    color: color-mix(in srgb-linear, #b331ffa5 20%, #7a80ddd8 45%);
+    color: color-mix(in srgb-linear, #794fb5 20%, #bc87e7 60%);
     border-radius: 2px;
-    -webkit-text-stroke: 1.5px rgb(250, 246, 246);
-    letter-spacing: 15px;
-    
+    -webkit-text-stroke: 0.7px rgb(255, 255, 255);
+    letter-spacing: 10px;
+    font-weight: 40%;
+    font-size: 70px;
 }
 
 .textos-instrucao{
@@ -25,13 +25,6 @@
     -webkit-text-stroke: 0.2px rgb(0, 0, 0);
     font-display: flex;
     font-size: larger;
+   
 }
 
-.quadrado-verde{
-    box-sizing: 10%;
-    border-radius: 3px;
-    border-color: black;
-    width: 40px;
-    height: 25px;
-    background-color: beige;
-}

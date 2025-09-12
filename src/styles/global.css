@@ -9,13 +9,16 @@
 /*Configurações de fonte para o body HTML*/
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Fundo escuro padrão, caso imagem falhe */
+    color: #121212;
+    line-height: 1.6; /*Aumentar legibilidade*/
     margin: 0;
     padding: 0;
 }
 
 /*Espaçamento entre as letras*/
 p{
-    letter-spacing: 1.5px;
+    letter-spacing: 0.8px;
 }
 
 /*Configurações de overlay para escurecer qualquer fundo*/
@@ -26,40 +29,134 @@ p{
  width: 100%;
  height: 100%;
  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)); /*Efeito escurecimento na imagem*/
- backdrop-filter: blur(0.5px); /*Pequeno efeito de desfoque na imagem*/
+ backdrop-filter: blur(2px); /*Pequeno efeito de desfoque na imagem*/
  z-index: 1;
 }
 /*Camada do container, será a 2, enquanto do overlay será 1.. tudo ficará em cima do overflow*/
 .container{
     z-index: 2;
+    position: relative; /**Garantir que o indice funcione em modo relativo*/
 }
 
 /*Linha decorativa abaixo título*/
 .linha-decorativa{
-    width: 100%;
+    width: 300px;
     height: 6px;
-    background: linear-gradient(90deg, #6623c3 0%, #ba93da 100%);
+    background: linear-gradient(135deg, #794fb5 40%, #bc87e7 80%);
     border-radius: 2px;
     margin: 0 auto;
+    animation: efeitoLinha 5s ease-in-out infinite alternate; /* Animação sutil */
 }
-
+/* Animação da linha decorativa */
+@keyframes efeitoLinha{
+    0%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 1;
+        transform: scaleX(2.00); /* Leve esticamento */
+    }
+}
 
 /*Template dos cards*/
 .card-template{
-    background: linear-gradient(135deg, #0c0c0c31 50%, #30303000 70%);
-    
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.267), rgba(255, 255, 255, 0.125));
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 25px 0;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+/*Efeitos ao passar o mouse em cima do card template*/
+.card-template:hover{
+    transition: transform 0.3s ease box-shadow 0.3s ease; /*Suavizar em zoom*/
+    transform: scale(1.05); /*Aumentar escala de zoom */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /*Sombreamento ao passar mouse*/
 }
 
 .table-elegant{
-        
+     background: transparent;
+     color: inherit;
+    margin: 0;
+    padding: 0;
+    border-radius: 2px;
 }
+
+/**Remover risco entre as alternativas*/
+    .table-elegant tbody td{
+        border: none  !important;
+    }
 
 .table-elegant:hover{
     overflow: hidden;  
-    opacity: 0.5; 
+    transition: ease(0.3s);
+}
+/*Alterar a cor da fonte dentro do hover td*/
+.table-elegant:hover td{
+    color: rgba(255, 255, 255, 1.0) !important;
 }
 
 
 
+.botao-customizado{
+background: linear-gradient(135deg, rgba(179, 49, 255, 0.5), rgba(255, 105, 180, 0.4));
+    border-radius: 6px;
+    display: inline-flex;
+    color: #ffffff; /*Cor da fonte*/
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    filter: blur(0.3px);
+}
+
+.botao-customizado:hover{
+    transform: scale(1.05);
+    background: linear-gradient(135deg, rgba(179, 49, 255, 0.8), rgba(255, 105, 180, 0.7));
+
+    display:inline-block
+}
+
+.numero_perguntas{
+    font-size: larger;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    
+}
+
+.quadrado-container{
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+}
+
+/*Cores das seleções dos quadrados*/
+.quadrado-verde{
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(64, 255, 21, 0.847);
+    margin-top: 5px;
+}
+
+.quadrado-vermelho{
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 0, 0, 0.932);
+    margin-top: 5px;
+}
+
+.quadrado-laranja{
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 191, 0, 0.932);
+    margin-top: 5px;
+}
 
 
