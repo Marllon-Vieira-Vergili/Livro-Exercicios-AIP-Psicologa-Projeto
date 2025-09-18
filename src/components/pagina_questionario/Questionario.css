@@ -1,21 +1,53 @@
-/* Importar Google Fonts para melhor tipografia */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/*Backgrund principal com overlay*/
-.plano-de-fundo-questionario{
-    background-image: url("./../../img/11810.jpg");
-    background-position: center;
+.questionario-wallpaper{
+    background: linear-gradient(rgb(13, 24, 68));
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    background-attachment: scroll;
-
-    position: relative;
+    width: 100%;
+    height: 100%;
     margin: 0;
-    padding: 0;  
-    min-height: 100vh;  
-    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    z-index: 0;
+    display: flex;
+    
+}
 
+
+.pergunta-item{
     display: flex;
     align-items: center;
-    padding: 2rem;
+    margin-bottom: 10px;
 }
+
+.descricao-pergunta{
+    font-size: 1rem;
+    margin: 5%;
+    
+    margin-bottom: 15px !important;
+    
+    color: rgb(255, 255, 255);
+}
+
+
+/*Estilos das alternativas*/
+
+.alternativas{
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado-container-questionario{
+    text-align: center;
+    cursor: pointer;
+}
+
+.quadrado-container small{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+
+
+
+

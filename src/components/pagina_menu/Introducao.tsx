@@ -114,7 +114,7 @@ export default function Introducao() {
                         Também não gostei dessa alternativa, mas marcarei por
                         obrigação.
                       </td>
-                      <td className="numero_perguntas">002</td>
+                      <td className="numero_perguntas mt-2">002</td>
                       <td className="quadrado-container">
                             <div className="quadrado-vermelho mt-3 justify-content-center align-middle"></div>
                       </td>

@@ -31,6 +31,8 @@ p{
  background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)); /*Efeito escurecimento na imagem*/
  backdrop-filter: blur(2px); /*Pequeno efeito de desfoque na imagem*/
  z-index: 1;
+
+
 }
 /*Camada do container, será a 2, enquanto do overlay será 1.. tudo ficará em cima do overflow*/
 .container{
@@ -60,10 +62,11 @@ p{
 
 /*Template dos cards*/
 .card-template{
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.267), rgba(255, 255, 255, 0.125));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
     backdrop-filter: blur(10px);
     padding: 20px;
     margin: 25px 0;
+    border-radius: 10px;
     border: none;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
@@ -101,11 +104,12 @@ p{
 .botao-customizado{
 background: linear-gradient(135deg, rgba(179, 49, 255, 0.5), rgba(255, 105, 180, 0.4));
     border-radius: 6px;
+    border: none;
     display: inline-flex;
     color: #ffffff; /*Cor da fonte*/
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 698px;
     height: 50px;
     transition: transform 0.3s ease;
     filter: blur(0.3px);
@@ -120,9 +124,10 @@ background: linear-gradient(135deg, rgba(179, 49, 255, 0.5), rgba(255, 105, 180,
 
 .numero_perguntas{
     font-size: larger;
-    justify-content: center;
+    justify-content: start;
     align-self: center;
     display: flex;
+    
     
 }
 
